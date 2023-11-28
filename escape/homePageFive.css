@@ -1,0 +1,63 @@
+.layoutWrapper-5 {
+  margin-bottom: 2rem;
+}
+
+.textContentSelectRoomTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContentSelectRoomTitle .image-container {
+  text-align: center;
+}
+
+.textContentSelectRoomTitle .image-container img {
+  text-align: center;
+  width: 40%;
+}
+
+.textChooseRoomTitle {
+  /* margin-bottom: ; */
+  position: relative;
+  bottom: 13rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.textChooseRoomTitle h2 {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.textChooseRoomTitle h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.textChooseRoomTitle p {
+  text-transform: none;
+}
+
+@media (max-width: 768px) {
+  .layoutWrapper-5 {
+    margin-top: 4rem;
+  }
+
+  .textChooseRoomTitle {
+    bottom: 10rem;
+    width: 80%;
+  }
+
+  .textChooseRoomTitle h2 {
+    font-size: 20px;
+  }
+
+  .textChooseRoomTitle h1 {
+    font-size: 28px;
+  }
+
+  .textChooseRoomTitle p {
+    font-size: 13px;
+  }
+}

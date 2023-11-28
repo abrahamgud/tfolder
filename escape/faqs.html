@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="faqs.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <title>FAQs | Ice Break Escape Room</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="header" include-html="header.html"></div>
+    <div class="faqs">
+      <h1>FAQs</h1>
+      <div class="faqs-main-content">
+        <div class="faqs-sub-content">
+          <img src="/images/faq-question-mark.svg" alt="General queries icon" />
+          <h3>General Queries</h3>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(1)">
+              <div class="question-content" id="question-content-1">
+                Are the Games scary?
+                <i class="large material-icons expand-more" id="expandMoreIcon1"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon1"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer1">
+                We don't have scary theme or jump scares. You will find some
+                dark rooms and props, yet we can assure you that no scary or
+                jump scare content whatsoever. They only exist for creating
+                atmosphere or a fluent storyline.
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(2)">
+              <div class="question-content" id="question-content-2">
+                Does it suit Team Building?
+                <i class="large material-icons expand-more" id="expandMoreIcon2"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon2"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer2">
+                <p>
+                  Perfect for team building! Just remember team work is the top
+                  tip for our rooms. Your team will have an absolutely
+                  remarkable escape experience.
+                </p>
+                <p>
+                  Feel free to contact us! We are looking forward to hear from
+                  you!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(3)">
+              <div class="question-content" id="question-content-3">
+                How many Games do you have?
+                <i class="large material-icons expand-more" id="expandMoreIcon3"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon3"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer3">
+                <p>
+                  Ice Break Escape Room has three amazing escape rooms on offer:
+                  SILENT, X-CASE and VANISHING.
+                </p>
+                <p>
+                  Click <a href="/rooms.html">HERE</a> to view more about our
+                  games.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(4)">
+              <div class="question-content" id="question-content-4">
+                How many people can play?
+                <i class="large material-icons expand-more" id="expandMoreIcon4"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon4"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer4">
+                <p>We can have maximum 21 people in three rooms.</p>
+                <p>
+                  If you have a large group that want to start at the same time,
+                  please contact us before making a booking.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(5)">
+              <div class="question-content" id="question-content-5">
+                Does it have any limit?
+                <i class="large material-icons expand-more" id="expandMoreIcon5"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon5"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer5">
+                <p>
+                  You must be 14 years or over to play our rooms. Younger
+                  players must be accompanied by adult.
+                </p>
+                <p>
+                  VANISHING and X-CASE require small climbing as part of the
+                  game.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container dropdown-container-last">
+            <div class="question" onclick="showAnswer(6)">
+              <div class="question-content" id="question-content-6">
+                Who would like these games?
+                <i class="large material-icons expand-more" id="expandMoreIcon6"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon6"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer6">
+                <p>
+                  Escape game is popular with groups of families, friends,
+                  parties, team buildings and even marriage proposals.
+                </p>
+                <p>
+                  If you are looking for something fun and unexpected,
+                  definitely try Ice Break Escape Room!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faqs-sub-content">
+          <img src="/images/booking-assist.svg" alt="Booking assist icon" />
+          <h3>Booking Assist</h3>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(7)">
+              <div class="question-content" id="question-content-7">
+                How to make a booking?
+                <i class="large material-icons expand-more" id="expandMoreIcon7"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon7"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer7">
+                <p>
+                  All bookings for escape room can be made via our online
+                  <a href="/booking.html">BOOKING</a>
+                  page. We require people to book ahead, as we cannot guarantee
+                  walk-in availability.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(8)">
+              <div class="question-content" id="question-content-8">
+                Can we have more players than booked?
+                <i class="large material-icons expand-more" id="expandMoreIcon8"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon8"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer8">
+                <p>
+                  Yes you can! If you have more people, as long as you don't
+                  exceed the maximum number of people permitted for each room,
+                  you can just pay the difference whn you arrive.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(9)">
+              <div class="question-content" id="question-content-9">
+                Can we have less players than booked?
+                <i class="large material-icons expand-more" id="expandMoreIcon9"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon9"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer9">
+                <p>
+                  Yes you can! If you have less people, simply use change
+                  booking link in your conformation email to make changes.
+                  Please note, if this change is made within 24hrs, 50% of fee
+                  for not coming players will be charged due to the nature of
+                  the game.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(10)">
+              <div class="question-content" id="question-content-10">
+                Can we do 2 rooms at the same time?
+                <i
+                  class="large material-icons expand-more"
+                  id="expandMoreIcon10"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon10"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer10">
+                <p>
+                  Of course you can! If you have a large group (exceeding the
+                  limit for different theme) and want to split into groups to
+                  play our games at the same time, please call or email us. We
+                  would do our best to move the sessions to suit you!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(11)">
+              <div class="question-content" id="question-content-11">
+                Do you sell gift vouchers?
+                <i
+                  class="large material-icons expand-more"
+                  id="expandMoreIcon11"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon11"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer11">
+                <p>
+                  Yes, we do! Just click
+                  <a href="/voucher.html">Buy Voucher here</a>. You may choose
+                  the gift amount and the recipients can Redeem Voucher and
+                  choose a date and time to suit them.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container dropdown-container-last">
+            <div class="question" onclick="showAnswer(12)">
+              <div class="question-content" id="question-content-12">
+                More questions about Booking?
+                <i
+                  class="large material-icons expand-more"
+                  id="expandMoreIcon12"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon12"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer12">
+                <p>
+                  We are here to answer all your questions. Feel free to contact
+                  us via phone or email. We will get back to you as soon as
+                  possible.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faqs-sub-content">
+          <img
+            src="/images/player-information.svg"
+            alt="Player information icon"
+          />
+          <h3>Information for Player</h3>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(13)">
+              <div class="question-content" id="question-content-13">
+                How long is the game?
+                <i
+                  class="large material-icons expand-more"
+                  id="expandMoreIcon13"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon13"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer13">
+                <p>
+                  There is a 15 mins introduction, the game itself takes 60
+                  mins. We will also have a short debrief if you still want to
+                  know more about the game. A group photo can also be taken
+                  afterwards. Total takes about 90mins.
+                </p>
+                <p>
+                  Please arrive 15 mins before your booking time for the
+                  introduction.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(14)">
+              <div class="question-content" id="question-content-14">
+                What do I need to bring?
+                <i
+                  class="large material-icons expand-more"
+                  id="expandMoreIcon14"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon14"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer14">
+                <p>
+                  Just bring your wisdom and eyes of observation when you go
+                  into the room!
+                </p>
+                <p>
+                  If you have some personal belongings, we will provide you a
+                  locker before the game, and you will have the key with you
+                  during the game.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(15)">
+              <div class="question-content" id="question-content-15">
+                Will I really be locked in?
+                <i
+                  class="large material-icons expand-more"
+                  id="expandMoreIcon15"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon15"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer15">
+                <p>
+                  No, our staff wil unlock the door in the first place if you
+                  tell us you feel uncomfortable being locked in the room.
+                </p>
+                <p>
+                  Just note: If you leave the game, the countdown clock does not
+                  stop as we need to maintain our booking schedule.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(16)">
+              <div class="question-content" id="question-content-16">
+                What if I can't solve a clue?
+                <i
+                  class="large material-icons expand-more"
+                  id="expandMoreIcon16"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon16"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer16">
+                <p>
+                  You will take a walkie talkie with you during the whole game
+                  session. You can ask for clues if needed. We will also have a
+                  staff member monitoring you at all times via our cameras in
+                  the room. They know exactly what stage you are on and can
+                  assist you at any stage.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container">
+            <div class="question" onclick="showAnswer(17)">
+              <div class="question-content" id="question-content-17">
+                What if I am late for my booking?
+                <i
+                  class="large material-icons expand-more"
+                  id="expandMoreIcon17"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon17"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer17">
+                <p>
+                  If your team arrives late you will still be able to play.
+                  Unfortunately, we will not be able to give you a full 60
+                  minutes to escape. This is because we need time to get the
+                  room ready for the next booking.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-container dropdown-container-last">
+            <div class="question" onclick="showAnswer(18)">
+              <div class="question-content" id="question-content-18">
+                What if I am unable to escape?
+                <i
+                  class="large material-icons expand-more"
+                  id="expandMoreIcon18"
+                  >expand_more</i
+                >
+                <i
+                  class="large material-icons"
+                  id="expandLessIcon18"
+                  style="display: none"
+                  >expand_less</i
+                >
+              </div>
+              <div style="display: none" id="answer18">
+                <p>
+                  You are locked in forever. Just kidding! Your Game Master will
+                  let you out and explain any unsolved puzzles to you if you
+                  want to know.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" include-html="footer.html"></div>
+  </body>
+
+  <script>
+    includeHTML();
+  </script>
+</html>

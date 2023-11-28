@@ -1,0 +1,127 @@
+.card {
+  /* border: 1px solid #ccc; */
+  border-radius: 15px;
+  /* padding: 20px; */
+  padding: 2.5rem 2rem;
+  /* max-width: 400px; */
+  width: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-width: 30%; */
+}
+
+.card * {
+  transition: all 0.3s ease;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  margin: 0 0 10px;
+}
+
+.card-subtitle {
+  margin: 0 0 20px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 1.5rem;
+}
+
+.card-actions a {
+  color: #9f1f24;
+  cursor: pointer;
+}
+
+.card-actions a:hover {
+  opacity: 0.8;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-now {
+  background-color: #9f1f24;
+  color: white;
+}
+
+.learn-more {
+  /* background-color: transparent; */
+  color: #9f1f24;
+  text-decoration: underline;
+  /* border: 1px solid #9F1F24; */
+  transition: color 0.3s ease;
+  font-size: small;
+  margin-left: 8px;
+}
+
+.learn-more:hover {
+  color: #8c1b1f;
+}
+
+.card-actions-coming-soon-button {
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+}
+
+.room-card-suggestion-button {
+  padding: 0.5rem 1.8rem;
+  color: white;
+  background-color: #9f1f24;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.room-card-suggestion-button:hover {
+  background-color: rgb(111, 21, 25);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+
+.room-card-suggestion-button-coming-soon {
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 360px;
+    margin-top: 2rem !important;
+  }
+
+  .room-options {
+    margin: 0 1rem;
+  }
+
+  .number-bar-card {
+    margin-top: -5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 340px !important;
+    margin-top: 2rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 335px !important;
+    margin-top: 2rem !important;
+  }
+}

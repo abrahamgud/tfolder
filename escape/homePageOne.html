@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homePageOne.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <div class="layoutWrapper-1">
+      <div class="textAndButtons">
+        <h1>
+          ICE BREAK
+          <br />
+          ESCAPE ROOM
+        </h1>
+        <p>Our Immersive Escape Room</p>
+        <p>Can You Escape in 60 Mins</p>
+        <div class="buttonRow">
+          <button
+            id="bookNowButton"
+            class="book-now-button"
+            onclick="handleBookButton()"
+          >
+            BOOK NOW
+          </button>
+          <div class="giftVoucherButton">
+            <div
+              class="git-voucher-list-button-group"
+              onclick="handleGiftVoucherListButton()"
+            >
+              <div id="giftVoucherButton" class="gift-voucher-button">
+                GIFT VOUCHER
+              </div>
+              <span
+                class="material-symbols-outlined"
+                id="gitVoucherExpandMoreIcon"
+                >expand_more</span
+              >
+              <span
+                class="material-symbols-outlined"
+                style="display: none"
+                id="gitVoucherExpandLessIcon"
+                >expand_less</span
+              >
+            </div>
+
+            <div
+              id="expandedButtons"
+              class="expandedButtons"
+              style="display: none"
+            >
+              <div class="gift-voucher-list-button-group-list">
+                <button onclick="handleBuyVoucherButton()">
+                  BUY GIFT VOUCHER
+                </button>
+                <button onclick="handleRedeemVoucherButton()">
+                  REDEEM GIFT VOUCHER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

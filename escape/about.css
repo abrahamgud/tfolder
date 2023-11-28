@@ -1,0 +1,264 @@
+.about {
+  background-image: url("/images/about-us-background.svg"),
+    linear-gradient(to bottom, transparent, black);
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: initial;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 11rem;
+}
+
+.about-logo {
+  position: relative;
+  top: -1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.about-us-introduction {
+  text-align: center;
+  width: 600px;
+}
+
+.about-us-reviews {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.about-us-reviews-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: start;
+}
+
+.about-us-button-group {
+  text-align: center;
+}
+
+.about-us-reviews-content-top,
+.about-us-reviews-content-bottom {
+  margin: auto;
+  /* height: 9rem; */
+}
+
+.about-us-customer-review .review {
+  height: 9rem !important;
+}
+
+.reviews-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.reviews-link:hover {
+  color: #9f1f24;
+}
+
+.contact-us-map {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-map {
+  text-align: center;
+}
+
+.css-oag243 {
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  outline: 0px;
+  border: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: rgb(255, 255, 255);
+  background-color: rgb(159, 31, 36);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  width: 180px;
+  padding: 8px;
+  margin: 16px;
+}
+
+.css-yp57c1 {
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border: 1px solid rgba(159, 31, 36, 0.5);
+  color: rgb(159, 31, 36);
+  width: 180px;
+  padding: 8px;
+  margin: 16px;
+}
+
+.css-oag243:hover {
+  text-decoration: none;
+  background-color: rgb(111, 21, 25);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+
+.css-yp57c1:hover {
+  text-decoration: none;
+  background-color: rgba(159, 31, 36, 0.04);
+  border: 1px solid rgb(159, 31, 36);
+}
+
+.review {
+  background-color: rgba(22, 22, 29, 0.5);
+  margin: 1rem;
+  padding: 2rem;
+  width: 35rem;
+  /* height: 9rem; */
+  position: relative;
+  border-radius: 10px;
+}
+
+.review p {
+  margin-top: 1rem;
+  color: grey;
+}
+
+.stars {
+  color: gold;
+}
+
+.TripAdvisorLogo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 44px;
+  height: 28px;
+}
+
+.contact-us-info {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #1d1d26;
+  border-radius: 5px;
+  text-align: start;
+}
+
+.contact-us-info-title {
+  color: grey;
+}
+
+.email-link,
+.phone-link {
+  color: white; /* Traditional link color */
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #9f1f24; /* Change color on hover/focus for visual feedback */
+  }
+}
+
+.contact-us-info-content-address {
+  color: white;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: #9f1f24; /* Change color on hover/focus for visual feedback */
+  }
+}
+
+.reviewer {
+  margin-top: 0.5rem;
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .contact-us-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .review {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1285px) {
+  .about-us-reviews-content {
+    flex-direction: column;
+  }
+
+  .about-us-introduction {
+    width: 90%;
+  }
+
+  .about p {
+    /* width: 80%; */
+  }
+
+  .about-us-customer-review .review {
+    height: auto !important;
+  }
+
+  .about-us-customer-review {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-map {
+    width: 80%;
+  }
+}

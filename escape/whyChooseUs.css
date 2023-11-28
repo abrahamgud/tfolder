@@ -1,0 +1,121 @@
+.why-choose-us-group-content {
+  display: flex;
+  justify-content: center;
+}
+
+.why-choose-us-group-desktop {
+  display: flex;
+  width: 80%;
+  gap: 1rem;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  /* overflow: hidden; */
+  /* overflow-y: hidden; */
+  margin-top: 2rem;
+}
+
+.why-choose-us-group-desktop p {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.why-choose-us-single-item-odd,
+.why-choose-us-single-item-even,
+.why-choose-us-single-item {
+  padding: 1.5rem 1rem;
+  background-color: rgba(29, 29, 38, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.why-choose-us-group-mobile {
+  display: none;
+}
+
+.why-choose-us-single-item-odd p,
+.why-choose-us-single-item-even p,
+.why-choose-us-single-item p {
+  color: grey;
+  transition: all 0.5s ease;
+}
+
+.why-choose-us-single-item-odd p {
+  /* transform: translateY(130%); */
+  transition: all 0.5s ease;
+  transition-delay: 0s;
+}
+
+.why-choose-us-single-item-even p {
+  /* transform: translateY(-130%); */
+  transition: all 0.5s ease;
+  transition-delay: 0s;
+}
+
+.why-choose-us-single-item-odd:hover p,
+.why-choose-us-single-item-even:hover p {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.why-choose-us-single-item-odd h2,
+.why-choose-us-single-item-even h2 {
+  position: relative;
+  transition: all 0.5s ease;
+  transition-delay: 0.1s;
+}
+
+.why-choose-us-single-item-odd h2 {
+  top: 4rem;
+}
+
+.why-choose-us-single-item-even h2 {
+  top: -4rem;
+}
+
+.why-choose-us-single-item-odd:hover h2,
+.why-choose-us-single-item-even:hover h2 {
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+.why-choose-us-single-item-odd img,
+.why-choose-us-single-item-even img {
+  transition: all 0.5s ease;
+}
+
+.why-choose-us-single-item-odd:hover img,
+.why-choose-us-single-item-even:hover img {
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 1330px) {
+  .why-choose-us-group-desktop {
+    display: none;
+  }
+
+  .why-choose-us-group-mobile {
+    display: flex;
+    width: 90%;
+    gap: 1rem;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .why-choose-us-group-mobile {
+    flex-direction: column;
+  }
+
+  .why-choose-us-single-item {
+    width: 75%;
+  }
+}

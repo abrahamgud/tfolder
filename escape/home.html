@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="home.css" /> -->
+    <link rel="icon" href="./images/favicon.ico" />
+    <title>Escape Room CBD | Escape Room Sydney | Ice Break Escape Room</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="header" include-html="header.html"></div>
+    <div id="homePageOne" include-html="homePageOne.html"></div>
+    <div id="homePageTwo" include-html="homePageTwo.html"></div>
+    <div id="homePageThree" include-html="homePageThree.html"></div>
+    <div id="homePageFour" include-html="homePageFour.html"></div>
+    <div id="homePageFive" include-html="homePageFive.html"></div>
+    <div id="footer" include-html="footer.html"></div>
+  </body>
+
+  <script>
+    function changeCard() {
+      const totalCards = 7;
+
+      for (let i = 0; i < totalCards; i++) {
+        document
+          .getElementById(`carousel-card-${i}`)
+          .classList.remove("carouselCardSelected");
+        document
+          .getElementById(`carousel-card-${i}`)
+          .classList.add("carouselCardNoneSelected");
+      }
+
+      document
+        .getElementById(`carousel-card-${currentCardIndex}`)
+        .classList.remove("carouselCardNoneSelected");
+      document
+        .getElementById(`carousel-card-${currentCardIndex}`)
+        .classList.add("carouselCardSelected");
+
+      currentCardIndex = (currentCardIndex + 1) % totalCards;
+      //   console.log(currentCardIndex);
+      setSelectedAuto(
+        `carousel-card-${currentCardIndex}`,
+        `carousel-card-text-${currentCardIndex}`
+      );
+    }
+
+    setInterval(changeCard, 3000);
+    includeHTML();
+  </script>
+</html>

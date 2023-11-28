@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="carousel.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="carousel-container">
+      <div
+        id="carousel-card-0"
+        class="carousel-card carouselCardSelected"
+        onclick="setSelected(id, 'carousel-card-text-0')"
+      >
+        <div
+          class="carousel-image"
+          style="background-image: url('./images/silent.svg')"
+        >
+          <div id="silentCarousel" include-html="silentCarousel.html"></div>
+        </div>
+      </div>
+      <div
+        id="carousel-card-1"
+        class="carousel-card carouselCardNoneSelected"
+        onclick="setSelected(id, 'carousel-card-text-1')"
+      >
+        <div
+          class="carousel-image"
+          style="background-image: url('./images/xcase.svg')"
+        >
+          <div id="xcaseCarousel" include-html="xcaseCarousel.html"></div>
+        </div>
+      </div>
+      <div
+        id="carousel-card-2"
+        class="carousel-card carouselCardNoneSelected"
+        onclick="setSelected(id, 'carousel-card-text-2')"
+      >
+        <div
+          class="carousel-image"
+          style="background-image: url('./images/vanishing.svg')"
+        >
+          <div
+            id="vanishingCarousel"
+            include-html="vanishingCarousel.html"
+          ></div>
+        </div>
+      </div>
+      <div
+        id="carousel-card-3"
+        class="carousel-card carouselCardNoneSelected"
+        onclick="setSelected(id, 'carousel-card-text-3')"
+      >
+        <div
+          class="carousel-image"
+          style="background-image: url('./images/darkness-reborn.svg')"
+        >
+          <div id="darknessCarousel" include-html="darknessCarousel.html"></div>
+        </div>
+      </div>
+      <div
+        id="carousel-card-4"
+        class="carousel-card carouselCardNoneSelected"
+        onclick="setSelected(id, 'carousel-card-text-4')"
+      >
+        <div
+          class="carousel-image"
+          style="background-image: url('./images/legacy.svg')"
+        >
+          <div id="legacyCarousel" include-html="legacyCarousel.html"></div>
+        </div>
+      </div>
+      <div
+        id="carousel-card-5"
+        class="carousel-card carouselCardNoneSelected"
+        onclick="setSelected(id, 'carousel-card-text-5')"
+      >
+        <div
+          class="carousel-image"
+          style="background-image: url('./images/eyes-of-argos.svg')"
+        >
+          <div id="eyesCarousel" include-html="eyesCarousel.html"></div>
+        </div>
+      </div>
+      <div
+        id="carousel-card-6"
+        class="carousel-card carouselCardNoneSelected"
+        onclick="setSelected(id, 'carousel-card-text-6')"
+      >
+        <div
+          class="carousel-image"
+          style="background-image: url('./images/redemption.svg')"
+        >
+          <div
+            id="redemptionCarousel"
+            include-html="redemptionCarousel.html"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var doughnut = 0;
+      window.setInterval(function () {
+        doughnut = doughnut + 1;
+        document.getElementById("doughnuts").innerHTML =
+          "You have " + doughnut + " doughnuts!";
+        // console.log(doughnut);
+      }, 1000);
+      document.addEventListener("DOMContentLoaded", (event) => {
+        let currentCardIndex = 0;
+
+        function changeCard() {
+          const totalCards = 7;
+
+          for (let i = 0; i < totalCards; i++) {
+            document
+              .getElementById(`carousel-card-${i}`)
+              .classList.remove("carouselCardSelected");
+            document
+              .getElementById(`carousel-card-${i}`)
+              .classList.add("carouselCardNoneSelected");
+          }
+
+          document
+            .getElementById(`carousel-card-${currentCardIndex}`)
+            .classList.remove("carouselCardNoneSelected");
+          document
+            .getElementById(`carousel-card-${currentCardIndex}`)
+            .classList.add("carouselCardSelected");
+
+          currentCardIndex = (currentCardIndex + 1) % totalCards;
+          // console.log(currentCardIndex);
+        }
+
+        setInterval(changeCard, 30);
+      });
+
+      includeHTML();
+    </script>
+  </body>
+</html>

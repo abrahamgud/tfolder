@@ -1,0 +1,164 @@
+.layoutWrapper-1 {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  height: 100vh;
+  width: 100%;
+  /* todo: change home background image */
+  background-image: url("./images/home-background-top.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+}
+
+.textAndButtons {
+  /* width: 45%; */
+  /* padding: 1rem 2rem; */
+  padding: 10%;
+  margin-left: 5%;
+}
+.textAndButtons h1 {
+  font-size: 70px;
+  margin: 4rem 0;
+}
+
+.textAndButtons p {
+  font-size: 25px;
+  margin: 1rem 0;
+}
+
+.textAndButtons-2 h1,
+.textAndButtons-3 h1 {
+  font-size: 45px;
+}
+
+/* Button Row CSS */
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 4rem;
+}
+
+.book-now-button {
+  padding: 0.8rem 3rem;
+  color: white;
+  background-color: #9f1f24;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 250px;
+  font-size: 15px;
+}
+
+.book-now-button:hover {
+  background-color: rgb(111, 21, 25);
+}
+
+.git-voucher-list-button-group {
+  background-color: transparent;
+  border: 0.5px solid white;
+  padding: 0.8rem 3rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: white;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+}
+
+.git-voucher-list-button-group:hover {
+  opacity: 0.8;
+}
+
+.gift-voucher-button {
+  font-size: 15px;
+}
+
+#expandedButtons:visible {
+  display: block;
+}
+
+.expandedButtons {
+  color: white;
+  background-color: #1d1d26;
+  margin-top: 0.2rem;
+  border-radius: 5px;
+}
+
+.gift-voucher-list-button-group-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 1rem 2rem; */
+  /* gap: 1rem; */
+  border-radius: 5px;
+}
+
+.gift-voucher-list-button-group-list button {
+  background-color: transparent;
+  color: grey;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 1rem 2rem;
+}
+
+.gift-voucher-list-button-group-list button:hover {
+  background-color: #9f1f24;
+  color: white;
+}
+
+/* Button Row CSS End */
+
+@media (max-width: 1119px) {
+  .layoutWrapper-1 {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 890px) {
+  .buttonRow {
+    flex-direction: column !important;
+    align-items: center;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .layoutWrapper-1 {
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .textAndButtons {
+    position: relative;
+    top: 35%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .textAndButtons h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .textAndButtons p {
+    font-size: 17px;
+    margin: 5px;
+  }
+
+  .textAndButtons,
+  .HomeBackgroundRightImage {
+    width: 100%;
+  }
+}

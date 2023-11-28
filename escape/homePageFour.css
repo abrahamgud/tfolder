@@ -1,0 +1,94 @@
+.layoutWrapper-4 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  background-repeat: no-repeat;
+  background-position: center 1rem;
+  background-size: initial;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.reviewHex {
+  width: 75%;
+  height: auto;
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard syntax */
+}
+
+.review {
+  background-color: rgba(22, 22, 29, 0.5);
+  margin: 1rem;
+  padding: 1.5rem;
+  width: 35rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.review p {
+  color: grey;
+}
+
+.reviewer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.TripAdvisorLogo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px; /* Adjust size as needed */
+}
+
+.review-one,
+.review-three {
+  position: relative;
+  right: 4rem;
+}
+
+@media (max-width: 970px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .reviews-section {
+    align-items: center;
+  }
+
+  .review {
+    width: 80%;
+  }
+
+  .review p {
+    margin: 1rem 0;
+  }
+
+  .reviews-section {
+    align-items: center;
+  }
+
+  .review-one,
+  .review-three {
+    right: 0;
+  }
+}

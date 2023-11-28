@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="silentCard.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div
+      id="redemptionCard"
+      class="card"
+      style="background-image: url('/images/redemption-suggest.svg')"
+      style="display: none"
+    >
+      <div class="card-content">
+        <h1 class="card-title">Redemption</h1>
+        <h3 class="card-subtitle">Horror Suspense</h3>
+        <div class="card-actions">
+          <button
+            id="bookButton"
+            class="room-card-suggestion-button room-card-suggestion-button-coming-soon"
+            onclick="handleBookButton()"
+          >
+            Coming soon
+          </button>
+          <a id="learnMoreLink" class="learn-more" href="rooms.html"
+            >LEARN MORE</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    includeHTML();
+  </script>
+</html>

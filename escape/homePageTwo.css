@@ -1,0 +1,26 @@
+.layoutWrapper-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center 1rem;
+  background-size: initial;
+}
+
+.textAndButtons-2 h1 h1 {
+  font-size: 45px;
+}
+
+.textAndButtons-2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 85%;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .textAndButtons-2 h1 {
+    font-size: 35px;
+  }
+}

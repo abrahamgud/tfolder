@@ -1,0 +1,52 @@
+.carousel-card.selected .carousel-card-text {
+  position: relative;
+  height: 26rem;
+}
+
+.carousel-card.non-selected .carousel-card-text {
+  display: none;
+}
+
+.carousel-card-text-0-display {
+  display: block;
+}
+
+.new-theme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.new-theme img {
+  height: 3rem;
+}
+
+.room-page-coming-soon-button {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: none;
+  width: 140px !important;
+}
+
+@media (max-width: 1350px) {
+  .carousel-card-text h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .carousel-card-text h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1180px) {
+  .carousel-card-text h1 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+
+  .carousel-card-text h2 {
+    margin-top: 2px;
+    font-size: 15px;
+  }
+}

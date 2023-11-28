@@ -1,0 +1,244 @@
+.silent-room-page {
+  /* background-image: url('/public/silent-room-background.svg'), linear-gradient(to bottom, transparent, black); */
+  background-image: url("/images/silent-room-background-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right 40%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 11rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.silent-room-page-buttons-group {
+  margin-top: 1rem;
+}
+
+.silent-room-page-main-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 5rem;
+  margin-top: 6rem;
+}
+
+.silent-room-page-main-content-item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.silent-room-page-main-content-item-number {
+  flex: 2;
+  font-size: 7rem;
+  /* color: #30303a; */
+  color: rgb(86, 86, 86);
+}
+
+.silent-room-page-main-content-item-content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.silent-room-page-main-content-item-title {
+  font-size: 25px;
+}
+
+.silent-room-page-main-content-item-paragraph {
+  margin-top: 1rem;
+  text-align: start;
+  color: grey;
+}
+
+.silent-room-page-main-content-item-paragraph strong {
+  color: white;
+}
+
+.silent-room-page-main-content-item-1 {
+  position: relative;
+  right: 6rem;
+}
+
+.silent-room-page-main-content-item-2 {
+  position: relative;
+  left: 6rem;
+}
+
+.css-1g1obse-MuiButtonBase-root-MuiButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #fff;
+  background-color: #9f1f24;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  width: 190px;
+  padding: 8px;
+  margin: 16px;
+}
+
+.css-1g1obse-MuiButtonBase-root-MuiButton-root:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgb(111, 21, 25);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.css-2zdckg-MuiButtonBase-root-MuiButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border: 1px solid rgba(159, 31, 36, 0.5);
+  color: #9f1f24;
+  width: 190px;
+  padding: 8px;
+  margin: 16px;
+}
+
+.css-2zdckg-MuiButtonBase-root-MuiButton-root:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(159, 31, 36, 0.04);
+  border: 1px solid #9f1f24;
+}
+
+@media (max-width: 768px) {
+  .silent-room-page {
+    background-image: url("/images/silent-room-background-mobile.svg"),
+      linear-gradient(to bottom, transparent, black);
+    background-size: auto;
+    background-position: top right 40%;
+  }
+
+  .silent-room-page-main-content-item {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .silent-room-page-main-content-item-number {
+    font-size: 5rem;
+  }
+
+  .silent-room-page-main-content-item-title {
+    text-align: start;
+  }
+
+  .silent-room-page-main-content-item-1,
+  .silent-room-page-main-content-item-2 {
+    left: 0rem;
+    right: 0rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .silent-room-page-main-content {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .silent-room-page-main-content {
+    margin-top: 1rem;
+  }
+}

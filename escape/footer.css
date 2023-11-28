@@ -1,0 +1,133 @@
+.footer {
+  padding: 5rem 8rem 4rem 8rem;
+  background-color: black;
+  display: flex;
+}
+
+.footer-title {
+  color: grey;
+}
+
+.footer a:hover {
+  color: #9f1f24;
+  cursor: pointer;
+}
+
+.footer-address {
+  width: fit-content;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.email-link,
+.phone-link {
+  color: white; /* Traditional link color */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #9f1f24; /* Change color on hover/focus for visual feedback */
+  }
+}
+
+.contact-details-left,
+.contact-details-right,
+.contact-details-right-phone,
+.footer-rooms-info,
+.footer-large-group-info {
+  flex: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+}
+
+.contact-details-right-phone {
+  position: relative;
+}
+
+.contact-details-right-phone .phone-group {
+  position: absolute;
+  left: 45%;
+  white-space: nowrap;
+}
+
+.footer-logo {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo img {
+  width: 200px;
+}
+
+.footer-rooms-info,
+.footer-large-group-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-rooms-info a,
+.footer-large-group-info a {
+  color: white;
+  width: fit-content;
+  margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-rooms-info a:hover,
+.footer-large-group-info a:hover {
+  color: #9f1f24;
+  width: fit-content;
+  margin: 1rem 0;
+}
+
+.footer-rooms-info-more-rooms {
+  margin-top: 1rem;
+}
+
+@media (max-width: 987px) {
+  #footer-logo {
+    order: 1;
+  }
+  #contact-right {
+    order: 2;
+  }
+  #contact-left {
+    order: 3;
+  }
+  #footer-right {
+    order: 4;
+  }
+
+  .footer {
+    padding: 4rem 1.5rem 2rem 1.5rem;
+    flex-direction: column;
+  }
+
+  .phone-group {
+    position: relative !important;
+    left: 0 !important;
+  }
+
+  .contact-details-left,
+  .contact-details-right-phone {
+    margin-top: 19px;
+  }
+
+  .footer-right {
+    margin-top: 19px;
+  }
+
+  .footer-address {
+    display: block;
+    margin-top: 1rem;
+  }
+}

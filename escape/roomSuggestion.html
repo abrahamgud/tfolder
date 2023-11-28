@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="roomSuggestion.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="number-bar-card">
+      <div class="number-row">
+        <div
+          id="number-row-2"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(2)"
+        >
+          2
+        </div>
+        <div
+          id="number-row-3"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(3)"
+        >
+          3
+        </div>
+        <div
+          id="number-row-4"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(4)"
+        >
+          4
+        </div>
+        <div
+          id="number-row-5"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(5)"
+        >
+          5
+        </div>
+        <div
+          id="number-row-6"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(6)"
+        >
+          6
+        </div>
+        <div
+          id="number-row-7"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(7)"
+        >
+          7
+        </div>
+        <div
+          id="number-row-8"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(8)"
+        >
+          8
+        </div>
+        <div
+          id="number-row-9"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(9)"
+        >
+          9
+        </div>
+        <div
+          id="number-row-10"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(10)"
+        >
+          10
+        </div>
+        <div
+          id="number-row-11"
+          class="number-box"
+          onclick="handleRoomSuggestionClick(11)"
+        >
+          11 or more
+        </div>
+      </div>
+      <div class="room-options">
+        <div
+          id="silentCard"
+          class="number-box numberBoxNoneSelected"
+          onclick="setActiveNumber(id)"
+          style="display: none"
+        >
+          <div include-html="silentCard.html"></div>
+        </div>
+
+        <div
+          id="xcaseCard"
+          class="number-box numberBoxNoneSelected"
+          onclick="setActiveNumber(id)"
+          style="display: none"
+        >
+          <div include-html="xcaseCard.html"></div>
+        </div>
+
+        <div
+          id="vanishingCard"
+          class="number-box numberBoxNoneSelected"
+          onclick="setActiveNumber(id)"
+          style="display: none"
+        >
+          <div include-html="vanishingCard.html"></div>
+        </div>
+
+        <div
+          id="legacyCard"
+          class="number-box numberBoxNoneSelected"
+          onclick="setActiveNumber(id)"
+          style="display: none"
+        >
+          <div include-html="legacyCard.html"></div>
+        </div>
+
+        <div
+          id="eyesOfArgosCard"
+          class="number-box numberBoxNoneSelected"
+          onclick="setActiveNumber(id)"
+          style="display: none"
+        >
+          <div include-html="eyesOfArgosCard.html"></div>
+        </div>
+
+        <div
+          id="redemptionCard"
+          class="number-box numberBoxNoneSelected"
+          onclick="setActiveNumber(id)"
+          style="display: none"
+        >
+          <div include-html="redemptionCard.html"></div>
+        </div>
+
+        <div
+          id="darknessRebornCard"
+          class="number-box numberBoxNoneSelected"
+          onclick="setActiveNumber(id)"
+          style="display: none"
+        >
+          <div include-html="darknessRebornCard.html"></div>
+        </div>
+
+        <div
+          id="teamBuildingCard"
+          class="number-box numberBoxNoneSelected"
+          onclick="setActiveNumber(id)"
+          style="display: none"
+        >
+          <div include-html="teamBuildingCard.html"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    includeHTML();
+  </script>
+</html>

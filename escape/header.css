@@ -1,0 +1,305 @@
+/* Update CSS class names to match HTML structure */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Solway", sans-serif;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Fixed position */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* Cover the whole viewport */
+  z-index: -1; /* Place it behind the content */
+
+  background: url("./images/home_background.svg") no-repeat center center fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  background-size: cover;
+}
+
+body {
+  background: url("./images/home_background.svg") no-repeat center center fixed;
+  background-size: cover;
+  color: white; /* Adjust text color as necessary */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none; /* Removes the default bullet points */
+  padding: 0; /* Removes the default padding */
+  margin: 0; /* Removes the default margin */
+}
+
+li {
+  padding: 0; /* Optionally remove padding if needed */
+  margin: 0; /* Optionally remove margin if needed */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1rem 0; */
+  position: absolute;
+  width: 100%;
+}
+
+/* Add class selector for header and its children */
+.header,
+.header * {
+  transition: all 0.3s ease;
+}
+
+.logoAndMenu {
+  flex: 1;
+  padding: 1rem 4rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+/* Update logo selector to match HTML structure */
+.logo img {
+  width: 150px; /* Adjust as needed */
+}
+
+.desktop-menu {
+  display: flex;
+  gap: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  font-size: 15px;
+}
+
+/* Update class selector for desktop-menu-rooms-group */
+.desktop-menu-rooms-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hover-icon {
+  display: none !important;
+  transition: all 0.3s ease;
+}
+
+.desktop-menu-rooms-group-rooms-icon {
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.desktop-menu-rooms-group-rooms-icon:hover a {
+  color: #9f1f24;
+}
+
+.desktop-menu-rooms-group-rooms-icon:hover .expand-more {
+  display: none !important;
+  transition: all 0.3s ease;
+}
+
+.desktop-menu-rooms-group-rooms-icon:hover .hover-icon {
+  display: inline-block !important;
+  color: #9f1f24;
+  transition: all 0.3s ease;
+}
+
+.desktop-menu-rooms-group-rooms-icon:hover .material-icons {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.desktop-menu-rooms-group:hover .desktop-menu-rooms-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  /* border: 1px solid grey; */
+  background-color: #1b1f23;
+  padding: 1rem;
+}
+
+.desktop-menu-rooms-dropdown {
+  display: none;
+  position: absolute;
+  margin-top: 1.5rem;
+}
+
+/* Update class selector for desktop-menu links */
+.desktop-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.desktop-menu a:hover {
+  color: #9f1f24;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle {
+  display: none !important;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none !important;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: transparent; */
+}
+
+/* Update class selector for mobile-menu links */
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  display: block;
+}
+
+.mobile-menu a:hover {
+  color: #9f1f24;
+  transition: all 0.3s ease;
+}
+
+/* .mobile-menu-close-icon {
+  display: none !important;
+} */
+
+#mobile-menu {
+  display: none !important;
+  /* other styles */
+}
+
+#mobile-menu.visible {
+  display: block !important; /* or whatever display type is appropriate */
+  /* other styles */
+}
+
+/* #mobile-menu-icon {
+  display: block !important;
+}
+
+#mobile-menu-icon.visible {
+  display: none !important;
+} */
+
+/* Add media query for responsiveness */
+@media (max-width: 1067px) {
+  .menu-icon {
+    display: block !important;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .logoAndMenu {
+    padding: 1rem 2rem;
+  }
+
+  .header {
+    flex-direction: row;
+  }
+
+  .logo {
+    order: 1;
+    z-index: 1200;
+  }
+
+  .mobile-menu-toggle {
+    display: flex !important;
+    order: 1;
+    align-items: center;
+    z-index: 1200;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    display: flex !important;
+    order: 2;
+    background-color: black;
+    align-items: flex-start;
+    z-index: 1000;
+  }
+
+  .mobile-menu a {
+    text-align: start;
+    width: fit-content;
+    padding: 1.5rem;
+  }
+
+  /* Update class selector for mobile-menu-options */
+  .mobile-menu-options {
+    font-size: 30px;
+    text-align: start;
+    margin-top: 5rem;
+    padding-left: 1rem;
+  }
+
+  /* Update class selector for mobile-menu-options-rooms-group */
+  .mobile-menu-options-rooms-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* gap: 1rem; */
+  }
+
+  /* Update class selector for mobile-menu-options-individual-rooms */
+  .mobile-menu-options-individual-rooms {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 0rem;
+    font-size: 15px;
+  }
+
+  /* Update class selector for mobile-menu-options-individual-rooms links */
+  .mobile-menu-options-individual-rooms a {
+    padding-top: 0;
+  }
+
+  #mobile-menu-icon {
+    display: block;
+  }
+
+  /* Hide the close icon initially */
+  #mobile-menu-close-icon {
+    display: none;
+  }
+
+  #mobile-menu-close-icon:visible {
+    display: block !important;
+  }
+
+  #mobile-menu-icon.visible {
+    display: none;
+  }
+
+  /* #mobile-menu.visible + .mobile-menu-toggle #mobile-menu-icon {
+    display: none;
+  }
+
+  #mobile-menu.visible + .mobile-menu-toggle #mobile-menu-close-icon {
+    display: block;
+  } */
+}

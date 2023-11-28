@@ -1,0 +1,125 @@
+.booking-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 11rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.booking-instruction-titles {
+  margin: 2rem auto 4rem auto;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.booking-instruction-titles span:hover {
+  color: #9f1f24;
+  text-decoration: underline;
+  cursor: pointer;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.booking-instruction-title-row-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.booking-instruction-title-row-group .material-symbols-outlined:hover {
+  cursor: pointer;
+  color: #9f1f24;
+  transition: all 0.3s ease-in-out;
+}
+
+.booking-instruction-content {
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  text-align: start;
+  width: 70%;
+  background-color: rgb(25, 29, 31);
+  padding: 3rem 4rem;
+  border-radius: 15px;
+  color: grey;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 100;
+  /* max-height: 80vh; */
+  /* overflow-y: auto; */
+}
+
+.booking-instruction-content h3 {
+  color: #9f1f24;
+  text-align: start;
+}
+
+.booking-instruction-content ol {
+  /* overflow-y: auto; */
+}
+
+.booking-options {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.active-tab {
+  background-color: #111111 !important;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 2rem 0;
+  width: 50%;
+  background-color: #191a1d;
+}
+
+.booking-button-content {
+  width: 1500px;
+}
+
+@media (max-width: 768px) {
+  .booking-component-show {
+    width: 95%;
+  }
+  .booking-button-content {
+    width: 400px !important;
+  }
+}
+
+@media (max-width: 410px) {
+  .booking-button-content {
+    width: 350px !important;
+  }
+}
+
+@media (max-width: 1510px) {
+  .booking-button-content {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .booking-button-content {
+    width: 900px;
+  }
+}
+
+@media (max-width: 920px) {
+  .booking-button-content {
+    width: 600px;
+  }
+}
